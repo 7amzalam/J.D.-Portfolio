@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+.timeline-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0.75rem;
+    height: calc(100% + 1.5rem);
+    width: 1px;
+    background-color: #cbd5e1;
+}
+.skill-badge:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #2563eb;
+    border-radius: 50%;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.D. Portfolio | UI/UX Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#2563eb',
+                        'dark': '#1e293b',
+                        'light': '#f8fafc'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm py-4 border-b border-gray-100">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight">J.D.</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-sm font-medium hover:text-accent transition-colors">About</a></li>
+                    <li><a href="#experience" class="text-sm font-medium hover:text-accent transition-colors">Experience</a></li>
+                    <li><a href="#skills" class="text-sm font-medium hover:text-accent transition-colors">Skills</a></li>
+                    <li><a href="#contact" class="text-sm font-medium hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-4">John Doe</h1>
+                <h2 class="text-xl md:text-2xl font-medium text-gray-500 mb-12">Product Designer</h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="px-8 py-3.5 bg-accent text-white font-medium rounded-lg hover:bg-opacity-90 transition-colors">
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="px-8 py-3.5 bg-white border border-gray-300 text-dark font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">About</h2>
+                <div class="space-y-4">
+                    <p class="text-lg leading-relaxed">
+                        I'm a product designer focused on creating meaningful experiences through thoughtful and intuitive interfaces. With a background in both visual design and user research, I bridge the gap between aesthetics and functionality.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        My approach centers on simplicity, usability, and purposeful design. I believe in creating digital products that not only look beautiful but also solve real problems for real people.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12">Experience</h2>
+                <div class="space-y-16">
+                    <!-- Experience Item 1 -->
+                    <div class="relative pl-12 timeline-item">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-accent"></div>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-4 mb-2">
+                                <span class="text-accent font-medium">2021 - Present</span>
+                                <span class="font-bold text-xl">Senior Product Designer</span>
+                            </div>
+                            <div class="text-gray-600 mb-4">InnovateCo • San Francisco</div>
+                            <p class="text-gray-700 leading-relaxed">
+                                Lead designer for the company's flagship SaaS product. Responsible for overhauling the UI system, establishing design patterns, and mentoring junior designers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative pl-12 timeline-item">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-accent"></div>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-4 mb-2">
+                                <span class="text-accent font-medium">2019 - 2021</span>
+                                <span class="font-bold text-xl">UI/UX Designer</span>
+                            </div>
+                            <div class="text-gray-600 mb-4">Digital Solutions Inc. • New York</div>
+                            <p class="text-gray-700 leading-relaxed">
+                                Designed and prototyped mobile applications for clients in the fintech industry. Conducted user research and usability testing to validate design decisions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-6 h-6 rounded-full border-2 border-accent flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-accent"></div>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-4 mb-2">
+                                <span class="text-accent font-medium">2017 - 2019</span>
+                                <span class="font-bold text-xl">Visual Designer</span>
+                            </div>
+                            <div class="text-gray-600 mb-4">Creative Studio • Boston</div>
+                            <p class="text-gray-700 leading-relaxed">
+                                Created branding systems and visual identities for startups and small businesses. Developed UI components for web applications and marketing sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Design</h3>
+                        <ul class="space-y-2">
+                            <li class="skill-badge">UI/UX Design</li>
+                            <li class="skill-badge">Interaction Design</li>
+                            <li class="skill-badge">Wireframing & Prototyping</li>
+                            <li class="skill-badge">Design Systems</li>
+                            <li class="skill-badge">User Research</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Tools</h3>
+                        <ul class="space-y-2">
+                            <li class="skill-badge">Figma</li>
+                            <li class="skill-badge">Adobe Creative Suite</li>
+                            <li class="skill-badge">Sketch</li>
+                            <li class="skill-badge">Framer</li>
+                            <li class="skill-badge">Webflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12">Contact</h2>
+                <div class="bg-white rounded-xl border border-gray-200 p-8">
+                    <div class="mb-8">
+                        <p class="text-lg mb-4">Interested in working together or have a question?</p>
+                        <p class="text-gray-600">Feel free to reach out via email or connect with me on professional networks.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Email</h3>
+                                <a href="mailto:hello@johndoe.design" class="text-accent hover:underline">hello@johndoe.design</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Connect</h3>
+                                <div class="flex space-x-4 mt-1">
+                                    <a href="#" class="text-accent hover:underline">LinkedIn</a>
+                                    <a href="#" class="text-accent hover:underline">Dribbble</a>
+                                    <a href="#" class="text-accent hover:underline">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-3xl mx-auto text-center text-gray-500">
+                <p>© 2023 John Doe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
